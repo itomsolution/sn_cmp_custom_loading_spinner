@@ -25,7 +25,7 @@ Filename: Custom Loading Spinner_UpdateSet_vNN.xml
 
 ## Documentation
 
-Refer to the Custom Loading Spinner_HowToSteps_vNN.docx document provided as additional how-to reference on manually configuring this solution.
+Refer to the Custom Loading Spinner_HowToSteps_vNN.pdf document provided as additional how-to reference on manually configuring this solution.
 
 
 ## Authors
