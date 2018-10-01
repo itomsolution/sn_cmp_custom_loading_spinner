@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-09-28 23:07:12">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<application_name>Cloud Management Platform</application_name>
+<application_scope>sn_cmp</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Update set for custom loading spinner on Cloud User Portal.</description>
+<inserted/>
+<name>Custom Loading Spinner</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>015f5fcedbf4a3402bc2d311ce9619e2</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-09-28 23:07:12</sys_created_on>
+<sys_id>67f32f82db38a3402bc2d311ce9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-09-28 23:07:12</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_ea61ab42db38a3402bc2d311ce9619f7</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function(snRecordWatcher, $scope, spUtil, $rootScope) {
+     /* widget controller */
+     var c = this;
+                
+     $scope.loadingIndicator = $rootScope.loadingIndicator;   
+     $scope.$on('sp_loading_indicator', function(e, value) {
+               $scope.loadingIndicator = value;
+     });
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.include-loader {&amp;#13;
+  position: fixed;&amp;#13;
+  top: 0;&amp;#13;
+  right: 0;&amp;#13;
+  bottom: 0;&amp;#13;
+  left: 0;&amp;#13;
+  opacity: 0.5;&amp;#13;
+  background-color: #000;&amp;#13;
+  z-index: 10;&amp;#13;
+  text-align: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+//animation&amp;#13;
+&amp;#13;
+.fa-pulse {&amp;#13;
+     -webkit-animation: fa-spin 1s infinite steps(8);&amp;#13;
+     animation: fa-spin 1s infinite steps(8);&amp;#13;
+}&amp;#13;
+&amp;#13;
+.loader-content {&amp;#13;
+  position: relative;&amp;#13;
+  display: block;&amp;#13;
+  margin: 160px auto;&amp;#13;
+  color: #fff;&amp;#13;
+  font-size: 1.5em;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.text-content {&amp;#13;
+  padding: 10px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Custom loading spinner for Cloud User Portal&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;cloud-user-portal-spinner-custom&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Cloud User Portal Spinner Custom&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-09-28 22:57:28&lt;/sys_created_on&gt;&lt;sys_id&gt;ea61ab42db38a3402bc2d311ce9619f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Cloud User Portal Spinner Custom&lt;/sys_name&gt;&lt;sys_package display_value="Cloud Management Platform" source="sn_cmp"&gt;80d50579eb203200979aa5115206fedd&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cloud Management Platform"&gt;80d50579eb203200979aa5115206fedd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ea61ab42db38a3402bc2d311ce9619f7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-09-28 22:57:28&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="include-loader" ng-show="loadingIndicator"&gt;
+  &lt;div class="loader-content"&gt;
+    &lt;i class="fa fa-spinner fa-pulse fa-3x fa-fw"&gt;&lt;/i&gt;
+    &lt;div class="text-content"&gt;
+      &lt;span&gt;${Loading... please wait.}&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>2016917927</payload_hash>
+<remote_update_set display_value="Custom Loading Spinner">67f32f82db38a3402bc2d311ce9619b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-09-28 23:07:12</sys_created_on>
+<sys_id>2bf32f82db38a3402bc2d311ce9619ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1662266b59c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-09-28 23:07:12</sys_updated_on>
+<table/>
+<target_name>Cloud User Portal Spinner Custom</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>89c1af421b38a34086a877ea00bf0860</update_guid>
+<update_guid_history>89c1af421b38a34086a877ea00bf0860:2016917927</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_4f0135570b072200eff7ef9bb4673aef</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Cloud Catalog Item - Container 3</name><order>3</order><sp_page display_value="cloud_cat_item">bde7af2a0b212200eff7ef9bb4673a9d</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-11-17 23:34:03</sys_created_on><sys_id>4f0135570b072200eff7ef9bb4673aef</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Cloud Catalog Item - Container 3</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sp_container_4f0135570b072200eff7ef9bb4673aef</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 22:58:23</sys_updated_on><title/><width>container-fluid</width></sp_container></record_update>]]></payload>
+<payload_hash>-639227052</payload_hash>
+<remote_update_set display_value="Custom Loading Spinner">67f32f82db38a3402bc2d311ce9619b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-09-28 23:07:12</sys_created_on>
+<sys_id>2ff32f82db38a3402bc2d311ce9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16622678d510000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-09-28 23:07:12</sys_updated_on>
+<table/>
+<target_name>Cloud Catalog Item - Container 3</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>26f1ef42bd38a340c47b5d17b4bcc222</update_guid>
+<update_guid_history>26f1ef42bd38a340c47b5d17b4bcc222:-639227052,39c063425738a3405a8130fbc515f1eb:-1432420109,d381a8ce67761b00ea158503ba63ca2e:-639227052,93264031daf2130074753526bac4ba7e:-1432420109,de0a8919427e970032f60d6af1862cf4:-639227052,de0a8919f67e9700779df73fa2cfc0f3:-1432420109</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_3c222382db38a3402bc2d311ce961915</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Cloud Catalog Item - Container 2">e6f1ef42db38a3402bc2d311ce96191f</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 22:59:06</sys_created_on><sys_id>3c222382db38a3402bc2d311ce961915</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sp_row_3c222382db38a3402bc2d311ce961915</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 22:59:06</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-793020872</payload_hash>
+<remote_update_set display_value="Custom Loading Spinner">67f32f82db38a3402bc2d311ce9619b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-09-28 23:07:12</sys_created_on>
+<sys_id>67f32f82db38a3402bc2d311ce9619ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>166226833da0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-09-28 23:07:12</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>7c222382bc38a3400447ddd29c832116</update_guid>
+<update_guid_history>7c222382bc38a3400447ddd29c832116:-793020872</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_78222382db38a3402bc2d311ce961917</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">3c222382db38a3402bc2d311ce961915</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 22:59:06</sys_created_on><sys_id>78222382db38a3402bc2d311ce961917</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sp_column_78222382db38a3402bc2d311ce961917</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 22:59:06</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1914781319</payload_hash>
+<remote_update_set display_value="Custom Loading Spinner">67f32f82db38a3402bc2d311ce9619b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-09-28 23:07:12</sys_created_on>
+<sys_id>6bf32f82db38a3402bc2d311ce9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>166226833f90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-09-28 23:07:12</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>382223827838a34091506ad1b32e2f18</update_guid>
+<update_guid_history>382223827838a34091506ad1b32e2f18:1914781319</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_5722eb42db38a3402bc2d311ce961900</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">78222382db38a3402bc2d311ce961917</sp_column><sp_widget display_value="Cloud User Portal Spinner Custom">ea61ab42db38a3402bc2d311ce9619f7</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 22:59:16</sys_created_on><sys_id>5722eb42db38a3402bc2d311ce961900</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sp_instance_5722eb42db38a3402bc2d311ce961900</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 22:59:16</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=5722eb42db38a3402bc2d311ce961900"/></record_update>]]></payload>
+<payload_hash>713285149</payload_hash>
+<remote_update_set display_value="Custom Loading Spinner">67f32f82db38a3402bc2d311ce9619b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-09-28 23:07:12</sys_created_on>
+<sys_id>a3f32f82db38a3402bc2d311ce9619ba</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16622685a250000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-09-28 23:07:12</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>5f22eb426c38a3407d507d2815195401</update_guid>
+<update_guid_history>5f22eb426c38a3407d507d2815195401:713285149</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_e6f1ef42db38a3402bc2d311ce96191f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Cloud Catalog Item - Container 2</name><order>2</order><sp_page display_value="cloud_cat_item">bde7af2a0b212200eff7ef9bb4673a9d</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-28 22:58:23</sys_created_on><sys_id>e6f1ef42db38a3402bc2d311ce96191f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cloud Catalog Item - Container 2</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sp_container_e6f1ef42db38a3402bc2d311ce96191f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-28 22:58:23</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-213590768</payload_hash>
+<remote_update_set display_value="Custom Loading Spinner">67f32f82db38a3402bc2d311ce9619b9</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-09-28 23:07:12</sys_created_on>
+<sys_id>eff32f82db38a3402bc2d311ce9619b9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>16622678d340000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-09-28 23:07:12</sys_updated_on>
+<table/>
+<target_name>Cloud Catalog Item - Container 2</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>2af1ef421e38a340b775fe0fc9fd0220</update_guid>
+<update_guid_history>2af1ef421e38a340b775fe0fc9fd0220:-213590768</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
