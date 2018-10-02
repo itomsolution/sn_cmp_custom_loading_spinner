@@ -29,6 +29,7 @@ Filename: Custom Loading Spinner_UpdateSet_vNN.xml
 
 Refer to the Custom Loading Spinner_HowToSteps_vNN.pdf document provided as additional how-to reference on manually configuring this solution.
 
+###### Screenshot of Loading Spinner
 <img src="images/CustomLoadingSpinner.png" width="700">
 
 
