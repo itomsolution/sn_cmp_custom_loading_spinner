@@ -1,5 +1,5 @@
 ## Custom Loading Spinner for Cloud User Portal
-
+###### Solution Category: Enhancement
 Display a more visibly prominent loading spinner when processing pages on the Cloud User Portal so that end users are aware that the form is being processed/loaded.  The intent is to augment the visibility of the OOB (out-of-the-box) spinner (i.e. three dots (“…”)) in the header.
 
 
