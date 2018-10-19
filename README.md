@@ -35,16 +35,3 @@ Refer to the Custom Loading Spinner_HowToSteps_vNN.pdf document as additional ho
 
 ## Disclaimer
 This is not an officially supported solution by ServiceNow.
-
-
-## Authors
-
-* Annie Chan
-* Pat Paluri
-
-
-## Maintainers/Sponsors
-
-Current maintainers:
-
-* [Annie Chan](https://github.com/sn-achan)
